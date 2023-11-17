@@ -29,6 +29,7 @@ if(userAge < ageUnder){
     const scount=(20/100);
     ticketPrice=ticketPrice*scount;
     const totalPrice=parseFloat(ticketPrice.toFixed(2));
+    document.getElementById("costo_biglietto").innerHTML= totalPrice;
     // DEBUG
     // console.log(totalPrice);
 }else if (userAge >seniorAge){
@@ -37,6 +38,7 @@ if(userAge < ageUnder){
     const scount=(40/100);
     ticketPrice=ticketPrice*scount;
     const totalPrice=parseFloat(ticketPrice.toFixed(2));
+    document.getElementById("costo_biglietto").innerHTML= totalPrice;
     // DEBUG
     // console.log(totalPrice);
 }
