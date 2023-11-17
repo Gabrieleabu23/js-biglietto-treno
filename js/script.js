@@ -27,8 +27,8 @@ if(userAge < ageUnder){
     // DEBUG
     // console.log("minore");
     const scount=(20/100);
-    ticketPrice=ticketPrice*scount;
-    const totalPrice=parseFloat(ticketPrice.toFixed(2));
+    let price=ticketPrice*scount;
+    const totalPrice=parseFloat((ticketPrice-price).toFixed(2));
     document.getElementById("costo_biglietto").innerHTML= totalPrice;
     // DEBUG
     // console.log(totalPrice);
@@ -36,13 +36,14 @@ if(userAge < ageUnder){
     // DEBUG
     // console.log("vecchio");
     const scount=(40/100);
-    ticketPrice=ticketPrice*scount;
-    const totalPrice=parseFloat(ticketPrice.toFixed(2));
+    let price=ticketPrice*scount;
+    const totalPrice=parseFloat((ticketPrice-price).toFixed(2));
     document.getElementById("costo_biglietto").innerHTML= totalPrice;
     // DEBUG
     // console.log(totalPrice);
 }
 else{
+    document.getElementById("costo_biglietto").innerHTML= ticketPrice;
     // DEBUG
     // console.log(totalPrice);
 }
